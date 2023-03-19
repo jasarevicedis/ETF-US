@@ -6,25 +6,25 @@ double increasing_factor = 2;
 
 int main() {
     myleds=1;
-    wait(1);
+    wait(0.1);
     while(1){
         dec=2;
         for(int i=0;i <6; i++){
             myleds = dec;
             dec *= increasing_factor;
-            wait(1);
+            wait(0.1);
         }
         myleds = 255;
-        wait(1);
+        wait(0.1);
         
         dec/=2;
         for(int i=0; i< 6; i++){
             myleds = dec;
             dec /= increasing_factor;
-            wait(1);
+            wait(0.1);
         }
         myleds = 255;
-        wait(1);
+        wait(0.1);
     }
 
 }
